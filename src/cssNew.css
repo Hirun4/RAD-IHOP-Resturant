@@ -1,0 +1,8 @@
+.home-container .home-bannerImage-container{
+    width: 100vw;
+    height: 100vh;
+}
+
+.home-container .home-bannerImage-container img{
+    width: 100%;
+}

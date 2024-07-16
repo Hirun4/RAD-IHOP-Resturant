@@ -1,17 +1,58 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
+// import './App.css';
+import About from "./Components/About";
+import {
+  createBrowserRouter,
+  RouterProvider,
+  Route,
+} from "react-router-dom";
+import Contacts from "./Components/Contacts";
+import Testimonial from "./Components/Testimonial";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+import Home from "./Components/Home";
+import Work from "./Components/Work";
+import { themeContext, ThemeContextProvider } from "./contextProviders/ThemeContextProvider";
+
+
+// const router = createBrowserRouter([
+//   {
+//     path: "/",
+//     element: <Home/>,
+//   },
+//   {
+//     path: "Home",
+//     element: <Home/>,
+//   },
+//   {
+//     path: "About",
+//     element: <About/>,
+//   },
+//   {
+//     path: "Contacts",
+//     element: <Contacts/>,
+//   },
+//   {
+//     path: "Testimonial",
+//     element: <Testimonial/>,
+//   },
+//   {
+//     path: "Work",
+//     element: <Work/>,
+//   },
+// ]);
+
+// const [theme, setTheme] = useContext(themeContext)
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <ThemeContextProvider>
+      {/* <div className={theme}> */}
+        <App />
+        {/* <RouterProvider router={router} /> */}
+      {/* </div> */}
+    </ThemeContextProvider>
   </React.StrictMode>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

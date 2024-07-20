@@ -2,13 +2,15 @@ import React from "react";
 import ProfilePic from "../Assets/aruna.jpeg";
 import { AiFillStar } from "react-icons/ai";
 import Navbar from "./Navbar";
+import Clock from "./Clock";
 const Testimonial = () => {
   return (
-    <div><Navbar></Navbar>
+    <div className="testo-theme"><Navbar></Navbar>
+    <Clock />
     <div className="work-section-wrapper">
       <div className="work-section-top">
-        <p className="primary-subheading">******</p>
-        <h1 className="primary-heading">What They Are Saying</h1>
+        
+        <h1 className="testi-primary-heading">What They Are Saying:</h1>
         <p className="primary-text">
         Welcome to our review page! Here, you'll find honest feedback from our valued
          customers about their experiences with our food delivery service. We pride ourselves

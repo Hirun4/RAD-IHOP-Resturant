@@ -1,0 +1,73 @@
+.dark .work-section-wrapper{
+    background-color: rgba(237, 246, 65, 0.733);
+    color: white;
+  }
+  .light-theme {
+    background-color: #f8eded;
+    color: black;
+  }
+  
+  .dark-theme {
+    background-color: rgb(0, 0, 0);
+    color:white;
+  }
+  .dark .for-you{
+    background-color: rgba(0, 0, 0, 0.733);
+    color: white;
+  }
+  .dark .contact-page-wrapper{
+    background-color: rgb(0, 0, 0);
+    color: white;
+  }
+  .dark .about-us{
+    background-color: rgb(0, 0, 0);
+    color: white;
+  }
+  .dark .for-you{
+    background-color: rgb(0, 0, 0);
+    color: white;
+  }
+  .dark .testo-theme{
+    background-color: rgb(0, 0, 0);
+    color: white;
+  }
+  .dark .cont-theme{
+    background-color: rgb(0, 0, 0);
+    color: white;
+  }
+  .dark .work-section-wrapper{
+    background-color: rgb(0, 0, 0);
+    color: white;
+  }
+
+  .light .for-you{
+    background-color: #f8eded;
+    color: rgb(0, 0, 0);
+  }
+  .light .contact-page-wrapper{
+    background-color: #f8eded;
+    color: rgb(0, 0, 0);
+  }
+  .light .about-us{
+    background-color: #f8eded;
+    color: rgb(0, 0, 0);
+  }
+  .light .for-you{
+    background-color: #f8eded;
+    color: rgb(0, 0, 0);
+  }
+  .light .testo-theme{
+    background-color: #f8eded;
+    color: rgb(0, 0, 0);
+  }
+  .light .cont-theme{
+    background-color: #f8eded;
+    color: rgb(0, 0, 0);
+  }
+  .light .work-section-wrapper{
+    background-color: #f8eded;
+    color: rgb(0, 0, 0);
+  }
+  .primary-text common-text.dark {
+    color: aliceblue;
+  }

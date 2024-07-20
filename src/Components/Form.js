@@ -62,7 +62,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className='bac'>
+    <div className='backgroundcolour-form'>
       <h2 className='con'>Contact Us</h2>
       <form onSubmit={handleSubmit}>
         <div className='vv'>

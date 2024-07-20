@@ -6,6 +6,7 @@ import Navbar from "./Navbar";
 import historyy from "../Assets/res.jpg"
 import missionn from "../Assets/mis.jpg"
 import valuee from "../Assets/val.jpg"
+import Clock from "./Clock";
 const Work = () => {
   const workInfoData = [
     {
@@ -25,14 +26,15 @@ const Work = () => {
     },
   ];
   return (
-    <div><Navbar></Navbar>
+    <div className="about-us"><Navbar></Navbar>
+    <Clock />
       <div className="work-section-wrapper">
         <div className="work-section-top">
-          <p className="primary-subheading">*******</p>
-          <h1 className="primary-heading">About Our Resturant</h1>
+          
+          <h1 className="work-primary-heading">About Our Resturant</h1>
           <h2 className="history">Our History</h2>
           <img src={historyy} alt="" />
-          <p className="primary-text common-text">
+          <p className={"primary-text"}>
             Founded in 2010, our restaurant has grown from a small family-owned eatery to a
             beloved food delivery service. Over the years, we've built a reputation for our
             commitment to quality and customer satisfaction. From our humble beginnings, we have
@@ -41,13 +43,13 @@ const Work = () => {
           </p>
           <h2 className="mission">Our Mission</h2>
           <img src={missionn} alt="" />
-          <p className="mission-text common-text">Our mission is to bring delicious, high-quality meals to
+          <p className="primary-text">Our mission is to bring delicious, high-quality meals to
             your doorstep, providing a convenient and delightful dining experience. We strive to use
             the freshest ingredients, ensure timely deliveries, and offer exceptional customer
             service.</p>
             <h2 class="values">Our Values</h2>
             <img src={valuee} alt="" />
-<ul class="values-list">
+<ul classname="values-list">
   <li>
     <strong>Quality:</strong> We use only the freshest ingredients to prepare our meals.
   </li>

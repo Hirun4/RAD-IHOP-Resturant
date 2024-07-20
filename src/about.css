@@ -1,0 +1,53 @@
+.about-section-container {
+    /*margin-top: 20rem;*/
+   
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+ 
+  .about-section-text-container {
+   
+   
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .about-primary-heading{
+    font-size: 60px;
+    max-width: 700px;
+    margin-bottom: 40px;
+  }
+  .about-primary-text{
+     font-size: clamp(1rem, 3vw, 1.5rem);
+  max-width: 400px;
+  margin-bottom: 50px;
+  margin-top: 30px;
+  }
+  .about-buttons-container {
+    margin-top: 2rem;
+    display: flex;
+    margin-bottom: 30px;
+  }
+  .watch-video-button {
+    margin-left: 2rem;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-radius: 5rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-weight: 600;
+    color: #d43535;
+    transition: 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .watch-video-button svg {
+    font-size: 3rem;
+    margin-right: 1rem;
+  }

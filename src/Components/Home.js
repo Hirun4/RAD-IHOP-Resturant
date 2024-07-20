@@ -1,10 +1,15 @@
 import React, { useContext, useEffect, useState } from "react";
-import BannerBackground from "../Assets/tomato.jpg";
-import BannerImage from "../Assets/ii.jpg";
+
 
 import Navbar from "./Navbar";
 import { FiArrowRight } from "react-icons/fi";
 import { themeContext } from "../contextProviders/ThemeContextProvider";
+
+import Clock from "./Clock";
+
+import BounceTextAnimation from "./BounceTextAnimation";
+import Logo from '../Assets/images.jpeg';
+import Logo2 from '../Assets/ii.jpg';
 
 const Home = () => {
   const [formData, setFormData] = useState({
@@ -42,28 +47,34 @@ const Home = () => {
     console.log(hour, " ", abbr)
 
     if(12 > hour && hour >= 6 && abbr == "AM"){
-      setMessage("morning")
+      setMessage("morning Sir/Madam!")
     }else if(( hour == 12 || (6 > hour && hour >= 1) ) && abbr == "PM"){
-      setMessage("afternoon")
+      setMessage("afternoon Sir/Madam!")
     }else if(12 > hour && hour >= 6 && abbr == "PM"){
-      setMessage("evening")
+      setMessage("evening Sir/Madam!")
     }else{
-      setMessage("night")
+      setMessage("night Sir/Madam!")
     }
   })
 
   return (
     <div className={theme == "dark" ? "dark-theme" : "light-theme"}>
       <Navbar />
+      <Clock />
       <div className="home-container">
         <div className="home-banner-container">
-          <div className="home-bannerImage-container">
-            <img src={BannerBackground} alt="" />
-          </div>
+         
           <div className="home-text-section">
-            <h1 className="primary-heading">
+          
+            <BounceTextAnimation />
+            <div>
+             {/* <img src={Logo} alt="Logo" className="responsive-image" /> */}
+             <img src={Logo2} alt="Logo" className="responsive-image" />
+            </div>
+            <h1 className={"primary-heading ${theme}"}>
               Your Favorite Food Delivered Hot & Fresh
             </h1>
+          
             <div className="form-section">
               <form onSubmit={handleSubmit}>
                 <input className="one"
@@ -94,10 +105,9 @@ const Home = () => {
             <button className="secondary-button">
               Order Now <FiArrowRight />
             </button>
-          </div>
-          <div className="home-image-section">
-            <img src={BannerImage} alt="" />
-          </div>
+            </div>
+          
+         
         </div>
 
       </div>

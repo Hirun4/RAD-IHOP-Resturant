@@ -1,28 +1,25 @@
 import React from "react";
-import AboutBackground from "../Assets/about-background-image.png";
-import AboutBackgroundImage from "../Assets/oo.png";
+
 import { BsFillPlayCircleFill } from "react-icons/bs";
 import Navbar from "./Navbar";
-
+import Clock from "./Clock";
 const About = () => {
   return (
-    <div><Navbar></Navbar>
+    <div className="for-you"><Navbar></Navbar>
+    <Clock />
     <div className="about-section-container">
-      <div className="about-background-image-container">
-        <img src={AboutBackground} alt="" />
-      </div>
-      <div className="about-section-image-container">
-        <img src={AboutBackgroundImage} alt="" />
-      </div>
+      
+      
       <div className="about-section-text-container">
-        <p className="primary-subheading">*******</p>
-        <h1 className="primary-heading">
+     
+        
+        <h1 className="about-primary-heading">
           Food Is An Important Part Of A Balanced Diet
         </h1>
-        <p className="primary-text">
+        <p className="about-primary-text">
         At IHOP , we're passionate about bringing you delicious, high-quality meals straight 
         to your doorstep. </p>
-        <p className="primary-text">
+        <p className="about-primary-text">
         Our chefs use the freshest ingredients to create a diverse menu of mouth-watering dishes.
          Whether you're craving comfort food or something new, we've got something to satisfy
           every palate.

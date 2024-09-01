@@ -16,34 +16,6 @@ import Work from "./Components/Work";
 import { themeContext, ThemeContextProvider } from "./contextProviders/ThemeContextProvider";
 
 
-// const router = createBrowserRouter([
-//   {
-//     path: "/",
-//     element: <Home/>,
-//   },
-//   {
-//     path: "Home",
-//     element: <Home/>,
-//   },
-//   {
-//     path: "About",
-//     element: <About/>,
-//   },
-//   {
-//     path: "Contacts",
-//     element: <Contacts/>,
-//   },
-//   {
-//     path: "Testimonial",
-//     element: <Testimonial/>,
-//   },
-//   {
-//     path: "Work",
-//     element: <Work/>,
-//   },
-// ]);
-
-// const [theme, setTheme] = useContext(themeContext)
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

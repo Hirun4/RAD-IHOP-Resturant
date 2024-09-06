@@ -8,7 +8,7 @@ import Home from "./Components/Home";
 import About from "./Components/About";
 import Work from "./Components/Work";
 import Testimonial from "./Components/Testimonial";
-import Contact from "./Components/Contacts";
+
 import Footer from "./Components/Footer";
 import { themeContext } from "./contextProviders/ThemeContextProvider";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";

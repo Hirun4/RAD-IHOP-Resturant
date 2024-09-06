@@ -3,7 +3,7 @@ import React, { useContext, useEffect, useState } from "react";
 
 import Navbar from "./Navbar";
 import { FiArrowRight } from "react-icons/fi";
-import { themeContext } from "../contextProviders/ThemeContextProvider";
+import { setTheme,themeContext } from "../contextProviders/ThemeContextProvider";
 
 import Clock from "./Clock";
 
@@ -36,8 +36,9 @@ const Home = () => {
   };
 
   const toggleTheme = () => {
-    setIsDarkTheme((prevTheme) => !prevTheme);
+    setTheme((prevTheme) => (prevTheme === "dark" ? "light" : "dark"));
   };
+  
 
   useEffect(() => {
     const date = new Date().toLocaleTimeString()
@@ -48,9 +49,9 @@ const Home = () => {
 
     if(12 > hour && hour >= 6 && abbr == "AM"){
       setMessage("morning Sir/Madam!")
-    }else if(( hour == 12 || (6 > hour && hour >= 1) ) && abbr == "PM"){
+    }else if(( hour === 12 || (6 > hour && hour >= 1) ) && abbr === "PM"){
       setMessage("afternoon Sir/Madam!")
-    }else if(12 > hour && hour >= 6 && abbr == "PM"){
+    }else if(12 > hour && hour >= 6 && abbr === "PM"){
       setMessage("evening Sir/Madam!")
     }else{
       setMessage("night Sir/Madam!")
@@ -58,7 +59,7 @@ const Home = () => {
   })
 
   return (
-    <div className={theme == "dark" ? "dark-theme" : "light-theme"}>
+    <div className={theme === "dark" ? "dark-theme" : "light-theme"}>
       <Navbar />
       <Clock />
       <div className="home-container">

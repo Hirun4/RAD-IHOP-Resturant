@@ -8,7 +8,7 @@ const Clock = () => {
       setTime(new Date());
     }, 1000);
 
-    // Cleanup the interval on component unmount
+    
     return () => clearInterval(interval);
   });
 

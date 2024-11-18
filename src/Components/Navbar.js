@@ -120,6 +120,26 @@ const Navbar = () => {
                 </ListItemButton>
               </ListItem>
             ))}
+            <label className="toggle-container">
+          <input 
+            type="checkbox" 
+            checked={theme === 'dark'} 
+            onChange={() => {
+              switch (theme) {
+                case "dark":
+                  setTheme("light");
+                  break;
+                case "light":
+                  setTheme("dark");
+                  break;
+                default:
+                  setTheme("light");
+              }
+            }} 
+          />
+          <span className="slider"></span>
+          {theme === 'dark' ? <FiMoon className={"theme-icon ${theme}"} /> : <FiSun className={"theme-icon ${theme}"} />}
+        </label>
           </List>
           <Divider />
         </Box>

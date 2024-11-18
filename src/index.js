@@ -49,10 +49,9 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <ThemeContextProvider>
-      {/* <div className={theme}> */}
+     
         <App />
-        {/* <RouterProvider router={router} /> */}
-      {/* </div> */}
+      
     </ThemeContextProvider>
   </React.StrictMode>
 );

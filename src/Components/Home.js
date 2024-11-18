@@ -17,7 +17,7 @@ const Home = () => {
     lastName: '',
   });
 
-  // const [isDarkTheme, setIsDarkTheme] = useState(false);
+  
   const [theme, setTheme] = useContext(themeContext)
   const [welcomeMessage, setWelcomeMessage] = useState('');
   const [message, setMessage] = useState("")

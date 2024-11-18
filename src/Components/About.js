@@ -3,6 +3,7 @@ import React from "react";
 import { BsFillPlayCircleFill } from "react-icons/bs";
 import Navbar from "./Navbar";
 import Clock from "./Clock";
+import Footer from "./Footer";
 const About = () => {
   return (
     <div className="for-you"><Navbar></Navbar>
@@ -29,10 +30,15 @@ const About = () => {
           <button className="watch-video-button">
             <BsFillPlayCircleFill /> Watch Video
           </button>
+          
         </div>
+        <Footer />
       </div>
+      
     </div>
+    
     </div>
+    
   );
 };
 
